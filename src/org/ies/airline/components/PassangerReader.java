@@ -10,7 +10,7 @@ public class PassangerReader {
     public PassangerReader(Scanner scanner) {
         this.scanner = scanner;
     }
-    public Passanger reda(){
+    public Passanger read(){
         System.out.println("Introduce el NIF");
         String nif = scanner.nextLine();
         System.out.println("Introduce tu nombre");

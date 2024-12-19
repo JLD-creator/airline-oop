@@ -30,7 +30,7 @@ public class FlightReader {
         scanner.nextLine();
         Passanger[] passangers = new Passanger[size];
         for (int i = 0; i < passangers.length; i++){
-         passangers[i] = passangerReader.reda();
+         passangers[i] = passangerReader.read();
         }
         return new Flight(fligthNumber, origin,destination,gateNumber,passangers);
     }
