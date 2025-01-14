@@ -57,6 +57,7 @@ public class Airline {
         return null;
     }
 
+
     public void updateSeatNumber(int flightNumber, String nif, int seatNumber) {
         for (Flight flight : flights) {
             if (flight.getFlightNumber() == flightNumber) {
