@@ -1,7 +1,4 @@
-import org.ies.airline.components.AirlineApp1;
-import org.ies.airline.components.AirlineReader;
-import org.ies.airline.components.FlightReader;
-import org.ies.airline.components.PassangerReader;
+import org.ies.airline.components.*;
 
 import java.util.Scanner;
 
@@ -11,7 +8,7 @@ public class Main {
         PassangerReader passangerReader = new PassangerReader(scanner);
         FlightReader flightReader = new FlightReader(scanner, passangerReader);
         AirlineReader airlineReader = new AirlineReader(scanner, flightReader);
-        AirlineApp1 airlineApp1 = new AirlineApp1(scanner,airlineReader,passangerReader,flightReader);
-        airlineApp1.run();
+        AirlineAppMenu airlineAppMenu = new AirlineAppMenu(scanner, airlineReader);
+        airlineAppMenu.run();
     }
 }
